@@ -1,37 +1,29 @@
 
 body{
-background-image: linear-gradient(90deg,#1983ff ,#243762);
+background-image: linear-gradient(90deg,#fcfcfc ,#6a6c6e);
 background-size: cover;
 padding:0;
 margin:0;
-background-repeat:none;
+font-family: serif;
 }
 div{
     margin:auto;
-    margin-top: 100px;
-    /* border:2px solid black; */
-    background-color: white;
+    margin-top: 160px;
+    background-color: rgb(238, 236, 236);
     width:fit-content;
     border-radius:30px 30px 10px 10px;
 }
 h1{
     text-align: center;
-    font-size: 35px;
+    font-size: 40px;
 }
-/* span{
-    font-size: 30px;
-    cursor: pointer;
-    margin: 0;
-    border-radius:8px;
-    background-color:gray;
-    padding: 4px 40px 3px 42px;
-} */
+
 .btn:hover{
     background-color:white ;
 }
 input{
     margin: 10px;
-    font-size: 30px;
+    font-size: 20px;
     border: 2px solid black;
     border-radius: 10px;
     padding-left: 10px;
@@ -42,15 +34,10 @@ input{
 border-radius: 5px;
     padding: 0 10px;
 }
-a{
-float: right;
-text-decoration: none;
-}
 
 
 ul{
     margin:10px;
-    /* border:2px solid brown; */
     list-style: none;
     padding:0;
     overflow-y: auto;
@@ -59,14 +46,11 @@ li{
     border-radius: 5px;
     padding-left: 10px;
    margin-bottom: 10px;
-   /* position: absolute;
-    width:50%;     */
+  
     background-color: grey;
-    /* text-align: justify; */
     font-size: 25px;
     color: white;
     border-bottom: 2px solid gray;
-    /* border-width: ; */
 
 }
 li:nth-child(odd){
@@ -78,14 +62,21 @@ li:hover{
 }
 .removebtn{
     position: relative;
-    
-    /* display: grid; */
     top: 0;
     float: right;
-    padding-right: 10px;
-    /* padding: 5px; */
+    padding:0 10px;
 }
 .removebtn:hover{
+    cursor: pointer;
     border-radius: 5px;
-    background-color: red;
+    background-color: rgb(248, 215, 215);
+}
+
+.text{
+  padding:0 10px;
+    float:right; 
+}
+
+.hide{
+    display: none;
 }

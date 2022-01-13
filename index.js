@@ -1,22 +1,41 @@
- function Add(){
-     var li=document.createElement("li");
-     var note=document.getElementById("note").value;
-     var t=document.createTextNode(note);
+//Add functionality
+var add = document.getElementById("btn");
+
+add.addEventListener("click",function(){
+
+     var li = document.createElement("li");
+     var note = document.getElementById("note").value;
+     var t = document.createTextNode(note);
      li.appendChild(t);
-     if(note==""){
+
+     if(note=="")
+     {
          alert("Enter your note!!!");
      }
-     else{
+     else
+     {
          document.getElementById("ul").appendChild(li);
     
-        }
+     }
         document.getElementById("note").value="";
         
-        var span = document.createElement("SPAN");
-        var rem=document.createTextNode("remove") ;
-        span.className="removebtn";
-        span.appendChild(rem);
-        li.appendChild(span);
+        //creating a remove button
+
+        var spa = document.createElement("span");
+        var rem = document.createTextNode("remove") ;
+        spa.className = "removebtn";
+        spa.appendChild(rem);
+        li.appendChild(spa);
         
+        //delete functionality
+        let remove = document.getElementsByTagName("span");
+        let l = remove.length;
+      for(var i = 0; i < l; i++)
+{
+    remove[i].onclick = function()
+     {
+        var del = this.parentElement;
+        del.style.display ="none";
+     }      
 }
-remove.addEvent
+});
